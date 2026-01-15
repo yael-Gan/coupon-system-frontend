@@ -1,0 +1,10 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+// 2️⃣ ואז מגדירים את הקומפוננטה עם הטיפוסים
+var Card = function (_a) {
+    var title = _a.title, value = _a.value, color = _a.color;
+    return (_jsxs("div", { className: "p-6 rounded shadow ".concat(color, " text-white"), children: [_jsx("h3", { className: "text-lg font-semibold", children: title }), _jsx("p", { className: "text-3xl font-bold mt-2", children: value })] }));
+};
+var Dashboard = function () {
+    return (_jsxs("div", { className: "space-y-6", children: [_jsxs("div", { className: "grid grid-cols-3 gap-6", children: [_jsx(Card, { title: "Total Coupons", value: "128", color: "bg-indigo-500" }), _jsx(Card, { title: "Active Clients", value: "76", color: "bg-green-500" }), _jsx(Card, { title: "Companies", value: "24", color: "bg-yellow-500" })] }), _jsxs("div", { className: "bg-white shadow rounded p-4", children: [_jsx("h2", { className: "text-lg font-bold mb-4", children: "Recent Coupons" }), _jsxs("table", { className: "w-full table-auto", children: [_jsx("thead", { children: _jsxs("tr", { className: "bg-gray-100", children: [_jsx("th", { className: "p-2 text-left", children: "ID" }), _jsx("th", { className: "p-2 text-left", children: "Title" }), _jsx("th", { className: "p-2 text-left", children: "Discount" }), _jsx("th", { className: "p-2 text-left", children: "Status" })] }) }), _jsxs("tbody", { children: [_jsxs("tr", { className: "border-b hover:bg-gray-50 transition", children: [_jsx("td", { className: "p-2", children: "001" }), _jsx("td", { className: "p-2", children: "Black Friday" }), _jsx("td", { className: "p-2", children: "50%" }), _jsx("td", { className: "p-2 text-green-600 font-bold", children: "Active" })] }), _jsxs("tr", { className: "border-b hover:bg-gray-50 transition", children: [_jsx("td", { className: "p-2", children: "002" }), _jsx("td", { className: "p-2", children: "Cyber Monday" }), _jsx("td", { className: "p-2", children: "30%" }), _jsx("td", { className: "p-2 text-red-500 font-bold", children: "Expired" })] })] })] })] })] }));
+};
+export default Dashboard;
