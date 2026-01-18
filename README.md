@@ -1,108 +1,137 @@
-# CouponBlast - מערכת לניהול קופונים
+# CouponBlast – Coupon Management System
 
-![CouponBlast Logo](public/logo192.png)
+🚀 **The project is live and running in the cloud:**
+👉 **[https://coupon-system-frontend.vercel.app/](https://coupon-system-frontend.vercel.app/)**
 
-אפליקציית ווב מודרנית לניהול וגילוי קופונים והטבות. האפליקציה מאפשרת למשתמשים לגלות קופונים, לשמור מועדפים ולנהל את הקופונים האישיים שלהם.
+---
 
-## דרישות מוקדמות
+## 🧾 Project Description
 
-- Node.js (גרסה 14 ומעלה)
-- npm (מגיע עם Node.js) או Yarn
-- גישה לשרת ה-API של הפרויקט
+CouponBlast is a modern web application for discovering, managing, and using coupons and promotions.
+The application allows users to:
 
-## התקנה
+* Discover available coupons
+* Save coupons to favorites
+* Manage personal coupons
+* Work with an external REST API
 
-1. שכפול המאגר:
-   ```bash
-   git clone [repository-url]
-   cd my-coupons-app
-   ```
+---
 
-2. התקנת התלויות:
-   ```bash
-   npm install
-   # או עם Yarn
-   # yarn install
-   ```
+## 🛠️ Main Technologies
 
-3. יצירת קובץ סביבה:
-   ```
-   צור קובץ חדש בשם `.env` בתיקיית השורש של הפרויקט והוסף את המשתנים הבאים:
-   VITE_API_URL=your_api_url_here
-   ```
+* React
+* Vite
+* TypeScript / JavaScript
+* REST API
+* CSS / Tailwind (if applicable)
 
-## הרצת הפרויקט
+---
 
-### מצב פיתוח
+## 🌐 Live Demo
+
+The application is already deployed and available online:
+
+🔗 **Live Demo:** [https://coupon-system-frontend.vercel.app/](https://coupon-system-frontend.vercel.app/)
+
+Highly recommended to open the link and explore the full functionality.
+
+---
+
+## 📦 Prerequisites
+
+* Node.js (version 14 or higher)
+* npm (comes with Node.js) or Yarn
+* Access to the project API server
+
+---
+
+## ⚙️ Local Installation
+
+Clone the repository:
+
+```bash
+git clone [repository-url]
+cd my-coupons-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+# or
+# yarn install
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a new `.env` file in the root directory and add:
+
+```
+VITE_API_URL=your_api_url_here
+```
+
+---
+
+## ▶️ Running the Project
+
+### Development Mode
 
 ```bash
 npm run dev
-# או עם Yarn
+# or
 # yarn dev
 ```
 
-האפליקציה תופעל בכתובת [http://localhost:5173](http://localhost:5173)
+The application will be available at:
 
-### בנייה להפצה
+```
+http://localhost:5173
+```
+
+### Production Build
 
 ```bash
 npm run build
-# או עם Yarn
+# or
 # yarn build
 ```
 
-הקבצים המיועדים להפצה ייווצרו בתיקייה `dist/`.
+The production-ready files will be generated in the `dist/` directory.
 
-## סקריפטים זמינים
+---
 
-- `npm run dev` - מפעיל את השרת בפיתוח עם Vite
-- `npm run build` - בונה את האפליקציה למצב הפקה
-- `npm run preview` - מריץ גרסה מקומית של האפליקציה לאחר בנייה
-- `npm run lint` - מריץ את ה-ESLint על הקבצים
-- `npm run format` - מעצב את הקוד עם Prettier
+## 📜 Available Scripts
 
-## מבנה הפרויקט
+* `npm run dev` – Runs the development server with Vite
+* `npm run build` – Builds the app for production
+* `npm run preview` – Runs a local preview after build
+* `npm run lint` – Runs ESLint
+* `npm run format` – Formats code with Prettier
+
+---
+
+## 🗂️ Project Structure
 
 ```
 src/
-├── components/     # קומפוננטות משותפות
-├── contexts/      # Contexts של React
-├── hooks/         # Custom Hooks
-├── pages/         # קומפוננטות עמודים
-├── services/      # שירותי API
-├── styles/        # קבצי עיצוב גלובליים
-└── utils/         # פונקציות עזר
+├── components/   # Shared components
+├── contexts/    # React contexts
+├── hooks/       # Custom hooks
+├── pages/       # Page components
+├── services/    # API services
+├── styles/      # Global styles
+└── utils/       # Utility functions
 ```
 
-## משתני סביבה
+---
 
-הפרויקט משתמש בקובץ `.env` להגדרת משתני סביבה. להלן המשתנים הזמינים:
+## 🚀 Deployment
 
-- `VITE_API_URL` - כתובת ה-API של השרת
+The project is deployed using **Vercel** and can also be deployed on Netlify or any other static hosting service.
 
-## פריסה (Deployment)
+Deployment steps with Vercel:
 
-הפרויקט מוכן לפריסה עם Vercel, Netlify או כל שרת סטטי אחר. להלן הוראות לפריסה ב-Vercel:
-
-1. התקן את ה-Vercel CLI:
-   ```bash
-   npm install -g vercel
-   ```
-
-2. התחבר לחשבון ה-Vercel שלך:
-   ```bash
-   vercel login
-   ```
-
-3. בצע פריסה:
-   ```bash
-   vercel
-   ```
-
-## רישיון
-
-MIT
-
-## קרדיטים
-
-פותח על ידי [שם החברה/המפתח]
+```bas
+```
